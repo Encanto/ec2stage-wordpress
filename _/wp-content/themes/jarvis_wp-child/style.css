@@ -1,0 +1,670 @@
+/*   
+Theme Name: Jarvis 2.8 Chid
+Theme URI: http://themeforest.net/user/RockNRollaDesigns/portfolio?ref=RockNRollaDesigns
+Description: Responsive Onepage Portfolio Theme by <a href="http://themeforest.net/user/RockNRollaDesigns/portfolio?ref=RockNRollaDesigns" Title="RocknRolla Designs">RocknRolla</a>
+Version: 2.8
+Author: RocknRolla
+Author URI: http://themeforest.net/user/RockNRollaDesigns/portfolio?ref=RockNRollaDesigns
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: two-columns, right-sidebar, flexible-width, custom-background, editor-style, featured-images, full-width-template, post-formats, sticky-post, theme-options, translation-ready
+Template: jarvis_wp
+
+*/
+
+@import url("../jarvis_wp/style.css"); 
+
+.main h1 {
+	font-family: "Ubuntu",arial,sans-serif;
+	font-size:45px;
+	font-weight:500;
+	color:#FFF;
+}
+.title {
+  margin-bottom: -20px;
+  }
+.title h1 {
+	border: none !important;
+	box-shadow: none !important;
+}
+.blog .post-single .title h1 { 
+	font-family: "Ubuntu",arial,sans-serif;
+		font-size: 27px;
+		font-weight:bold;
+		color: #3c433d;
+		text-transform: uppercase;
+		background-color: #ffffff;
+}
+
+.overlay, .st_facebook_large, .st_twitter_large, .st_linkedin_large, .st_email_large, .st_sharethis_large {
+  display:none;
+}
+.home-text-wrapper {
+  background: none !important;
+	}
+
+		.main{
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: auto;
+			min-height: 100%;
+			min-width: 100%;
+			width: auto;
+			position: relative;
+			z-index: 4;
+		}
+		.cover{
+			position: fixed;
+			opacity: 1;
+			background-color: rgba(0,0,0,.6);
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+		.cover.black{
+			background-color: rgba(0,0,0,.6);
+		}
+		
+		.blur{
+		  opacity:0;
+		}
+		#video_background {
+			
+			top: 0px;
+			right: 0px;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: 1;
+			overflow: hidden;
+			background-position: center center;
+			background-size: cover;
+		
+		}
+		#video_pattern {
+			position: fixed;
+			opacity: 0.6;
+			background-color: rgba(0,0,0,.45);
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+
+		.vertical-center {
+			text-align: center;
+			position: absolute;
+			z-index: 1000;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			color: #fff;
+			width: 100%;
+		}
+		.btn {
+			font-family: "Ubuntu",arial,sans-serif;
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height: 1;
+			font-weight: 400;
+			color: #fff;
+			display: inline-block;
+			padding: 1rem 0;
+			text-decoration: none;
+			letter-spacing: .06em;
+			width: 285px;
+			text-align: center;
+			transition: all 500ms;
+			background-color:#3f93d1;
+		}
+		.btn:hover {
+			background: #fff;
+			color:#000;
+		}
+		.btn + .btn {
+			margin-left: 40px;
+			background-color:#aed13f;
+		}
+		.vertical-center p {
+			display:inline-block;
+			font-size:24px;
+		}
+		.vertical-center p + p {
+			margin-left: 40px;
+		}		
+
+		@media (max-width: 767px) {
+			.vertical-center {
+				max-width: calc(100% - 84px);
+				margin-left: 42px;
+				margin-right: 42px;
+				left: 0;
+				-webkit-transform: translate(0, -57%);
+				transform: translate(0, -57%);
+			}
+			.btn {
+				margin: 0px auto;
+				display: block;
+			}
+			.btn + .btn {
+				margin-left: auto;
+				margin-top: 24px;
+			}
+			.vertical-center p {
+				display:block;
+				font-size:20px;
+			}
+			.vertical-center p + p {
+				margin-left:0;
+			}		
+			.main {height:560px;}		
+		}
+
+		@media (max-width: 736px) {
+			.logo {
+				width: 114px;
+				height: 19px;
+				margin-left: -57px;
+				margin-top:20px;
+			}
+			.main h1 {
+				font-size: 45px;
+			}
+			#video_background {
+				display: none;
+			}
+		}
+		@media (max-width: 374px) {
+			.btn {
+				width: auto;
+				padding: 1rem .5rem;
+			}
+		}
+
+
+.main-menu {
+	display:none !important;
+}
+@media only screen and (max-width: 767px) {
+	#home .home-text-wrapper {
+	    padding: 0 !important; 
+	}
+}
+
+
+/***********************************FOOTER************************************/
+.copyright-logo {
+		display: none;
+}
+.copyright {
+  	margin-top: -20px;
+  }
+.copyright .social-icons {
+    margin-left: 30px;
+}
+.copyright .social-icons .social-icon {
+    margin: 0px 30px 30px 0px !important;
+    background-color: rgba(162, 29, 42, 1) !important;
+    border-radius: 3px;
+}
+.copyright a:hover {
+  	color:#555555 !important;
+}
+.social-icons a:hover {
+    background-position: 0px -60px !important;  
+}
+.social-icon a {
+    width: 60px !important;
+    height: 60px !important;
+}
+.social-icon {
+	  width: 60px !important;
+    height: 60px !important;
+	}
+
+@media only screen and (max-width: 767px) {
+	.copyright .social-icons .social-icon {
+    margin: 0px !important;
+		}
+}	
+/***********************************NAVIGATION************************************/
+nav .container {
+    width: 84% !important; /*used to be 96%*/
+}
+nav.colored {
+	background-color:#3f93d1 !important;
+	height:65px;
+}
+.selectnav {
+  background-image: url('http://encantosquared.com/dev/wp-content/uploads/2014/08/selectmenu3.png') !important;
+  }
+.navigation.colored li a {
+  	font-family: "Ubuntu Condensed",arial,sans-serif !important;
+	  }
+
+.selectnav option {
+    color: #FFF !important;
+  	font-size: 16px;
+  	padding: 4px 10px;
+ /*** -moz-selection:    background: none repeat scroll 0 0 #a21d2a;  *****/
+}
+
+.selectnav {
+	background-position: right top  !important;
+	font-family: "Ubuntu Condensed",arial,sans-serif !important;
+	padding-right: 31px !important;
+	padding-top: 27px !important;
+	width: 0px !important;
+	padding-left: 0 !important;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.selectnav.show {
+	width: 150px !important;
+	padding-right: 0 !important;
+}
+
+.selectnav li {
+	display:none;
+	padding: 5px 5px;
+	line-height: 13px;
+	background-color: #3c433d;
+}
+.selectnav.show li { display:block }
+
+.logo.large  {
+	margin: 0 auto;
+    width: 175px;
+    display:block !important;
+    margin-top:-25px;
+}
+nav .container .four.columns {
+	float:none !important;
+}
+
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+	.selectnav {
+		display:none !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.selectnav {
+	    display: none !important;
+}
+		.logo.large  {
+
+	    margin-top:-0;
+	}
+}
+/***********************************SECTIONS*****************************************/
+.section {
+    padding: 80px 0px !important;
+  }
+  .values.section {
+  	padding: 0 0 80px 0 !important;
+  }
+  .parallax .parallax-content {
+    padding: 80px 0px !important;
+		}
+#enterprise-intelligence {
+		  
+		}
+#enterprise-intelligence p {
+		  
+		}
+#what-we-do h1, #knowledge-services h1, #values_title, #team-2 h1, #enterprise-intelligence h1, #successful-applications h1, #values h1, #verticals h1 {
+		font-family: "Ubuntu",arial,sans-serif;
+		font-size: 27px;
+		font-weight:bold;
+		color: #3c433d;
+		text-transform: uppercase;
+		background-color: #ffffff;
+		}
+#successful-applications h1,  #verticals h1  {
+		background-color: transparent;
+		margin-bottom:20px;
+		font-size:65px;
+		}		
+#enterprise-intelligence h1 {
+	max-width: 700px;
+	text-align:center;	
+}
+#first-parallax .title {
+		display:none;
+		}
+#first-parallax.section {
+		padding:0 !important;
+		}		
+#what-we-do p, #enterprise-intelligence p, #values p {
+	line-height:26px;
+	max-width: 700px;
+    margin: 0 auto;
+}
+#back-to-top a {
+  		width: 68px !important;
+  		height: 68px !important;
+  		background: url('http://encantosquared.com/dev/wp-content/uploads/2014/08/backtotop2.png') no-repeat scroll center center #3c433d !important;
+}
+#back-to-top a:hover {
+  		background-color: #a21d2a !important;
+}
+#contact {
+		  background-color: #3c433d;
+		}
+#contact p {
+		  color: #ffffff;
+		}
+#contact h1 {
+		font-family: "Ubuntu",arial,sans-serif;
+
+		font-size: 27px;
+		font-weight:bold;
+		color: #ffffff;
+		text-transform: uppercase;
+		background-color: #3c433d;
+		}
+#bg644 {
+	background-size:100% !important;
+}
+.tp-caption a {
+	color:#FFF;
+}
+@media only screen and (max-width: 420px) {
+		.section {
+			padding:0 !important;
+		}
+		#what-we-do {
+			padding-top:40px !important;
+		}
+		#verticals.parallax {
+			padding-bottom:0;
+		}
+		#verticals .parallax-bg {
+			height:200px;
+		}	
+  .parallax .parallax-content {
+    padding: 50px 0px !important;
+		}
+		#verticals {
+			margin-top:25px;
+		}
+}
+/************************CONTACT**************************/
+.wpcf7-form textarea, .wpcf7-form select, .wpcf7-form input[type="email"], .wpcf7-form input[type="text"] {
+   /* width: 360px !important; */
+   /* margin: 0px !important; */
+    padding: 3px !important;
+  margin: 0px;
+	color: #414042;
+  font-size: 11px !important;
+  	border: none !important;
+}
+
+.wpcf7-form input[type="email"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 400px;
+	max-width: 100%;
+	margin: 5px 0 0 0;
+}
+
+#contact .wpcf7-textarea {
+  height: 124px;	/* MESSAGE box */ 
+}
+#contact p, .wpcf7 form.wpcf7-form p {
+    font-weight: normal !important;
+    font-family: "Ubuntu",helvetica,sans-serif;
+  	font-size: 11px;
+  	margin: 0px 0px !important;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  	color: #414042 !important;
+}
+input[type="submit"] {
+    background-color: #A21D2A !important;
+    border: 4px #a21d2a solid !important;
+    color: #ffffff;
+  	font-size: 11px !important;
+	margin-top: 14px;
+}
+
+.container .one-half {
+    width: 31%;
+  	margin-left: 17% !important;
+  
+}
+.container .one-half.last {
+    width: 31%;
+  	margin-left: 0px !important;
+  
+}
+
+div.wpcf7 div span.wpcf7-form-control-wrap input {
+       margin-bottom: 14px;
+}
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+ padding: 3px 3px !important; 
+}
+
+@media (max-width: 767px) { 
+	.container .one-half, .container .one-half.last {
+    		width: 100%;
+		margin-left: 0 !important;
+		float: none;
+	}
+	.container .one-half {
+    		
+	}
+	.container .one-half.last {
+    		
+	}
+	#wpcf7-f398-o1 .wpcf7-form-control.wpcf7-submit,
+	#wpcf7-f398-o1 input {
+		width: 100%;
+	}
+	#wpcf7-f398-o1 .wpcf7-form select {
+		width: 100%
+	} 
+}
+/************************SOCIAL SPHERE********************/
+i.fa.fa-tasks, .post-meta a {	
+		  display:none !important;
+		}
+.post {
+    margin-bottom: 0px !important; /***used to be 60px **/
+}
+.post-meta {
+	  border-top: none !important;
+	  border-bottom: none !important;
+			}
+.post-title {
+		font-family: "Ubuntu",arial,sans-serif;
+		font-size: 25px !important;
+		font-weight: normal !important;
+}  
+#pagination a, #pagination span {
+  	font-weight: normal !important;
+}	
+/*********************SIDEBAR and WIDGETS*********************/
+
+#sidebar h3, h3 .twitter_title_link {
+  	color: #EA1D2C;
+}
+#searchform input[type="text"] {
+  	width: 270px;
+  	border: 2px solid #999;
+}
+/*google+*/
+.ozoGPAuthor, .ozoGPcomments {
+	display:none;
+}
+#ozoGPstatusWidget .ozoGPstatus p {
+  line-height: 18px;
+  margin-left: 0 !important;
+}
+#ozoGPstatusWidget img.left {
+  	margin-top: 12px;
+}
+ .ozoGPstatus {
+  	font-size: 14px;
+	}
+#ozoGPstatusWidget .hr {
+	border-top: none;
+  }
+/*twitter*/
+.really_simple_twitter_widget li { 
+padding: 0 0 8px 0;
+  margin-bottom:6px; 
+  clear:both;
+  list-style:none;
+  line-height: 18px;
+}
+ul.really_simple_twitter_widget {
+    margin: 20px 0px 20px 0px;
+    border: 1px solid #CCC;
+    padding: 10px;
+    font-size: 14px;
+}
+iframe #twitter-widget-0.twitter-follow-button {
+margin-left: 40px !important;
+}
+.rstw_comma {
+  	display: none;
+  }
+.twitter-timestamp {
+  	font-size: 12px;
+	color: red !important;
+ 	 display: block;
+ }
+.twitter-timestamp a {
+  	color: #AAA;
+	}
+#twitter-widget-0 {
+  margin-left: 0px;
+}
+  
+/*linked in*/
+.textwidget {
+  	margin-left:0px;
+  }
+
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+  .blog .post-single .container .twelve.columns { width: 525px; }
+  .blog .post-single #sidebar { width: 201px; }
+  
+}
+/****************************** Frontpage - blue margin "home" section bugfix ****************/
+.home-parallax {
+	padding:0 !important;
+}
+
+/****************************** Frontpage - logo position ****************/
+#home .home-text-wrapper {
+	vertical-align: top;
+
+}
+	
+
+/****************************** Frontpage Parallax - 6 boxes ****************/
+#successful-applications h2 
+{ margin-bottom: 40px; 
+		font-family: 'Ubuntu',arial,sans-serif;
+		font-size: 24px;
+		font-weight:bold;
+		text-transform:uppercase;
+		
+	  }
+#successful-applications ul.posts { max-width:100%;  margin:0 auto; }
+	
+	#successful-applications ul.posts li {  
+		position:relative;
+		height: 220px;
+		background: rgba(255,255,255,.8); 
+		color: #FFF;
+		margin-bottom:0px;
+		padding: 0;
+		display:inline-block;
+		width: 33%;
+		margin:-3px;
+	}	
+	#successful-applications ul.posts li.first {
+		background-color:#254d77;
+	}
+	#successful-applications ul.posts li.second {
+		background-color:#3AB0EA;
+	}
+	#successful-applications ul.posts li.third {
+		background-color:#3F93D1;
+	}
+	#successful-applications ul.posts li.fourth {
+		background-color:#3875AD;
+	}		
+	#successful-applications ul.posts li h3 {  font-size: 40px; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-weight: bold; color:#FFF;}
+	#successful-applications ul.posts li p {  
+	color: #FFF;
+	width: 80%;
+    text-align: center;
+    margin: 0 auto;
+	}
+	.parallax {
+		background-color: #FFF !important;
+	}	
+	.vertical-center-verticals {
+			text-align: center;
+			position: absolute;
+			z-index: 1000;
+			top: 50%;
+			-webkit-transform: translate(0, -50%);
+			transform: translate(0, -50%);
+			width: 100%;
+		}
+@media ( max-width: 1315px ) {
+
+	#successful-applications ul.posts li h3 {  }
+	#successful-applications ul.posts li p {  line-height: 1.3em; font-size: .95em;  }
+}
+@media ( max-width: 1199px ) {
+
+}
+@media ( max-width: 980px ) {
+	.parallax .parallax-content { width: 100%; }
+	#successful-applications ul.posts li h3  { font-size:28px; }
+}
+
+@media (max-width: 768px) {	/* iPad */
+	.parallax .parallax-content {  }
+	#successful-applications ul.posts li { width:100%; margin-bottom: 15px; }
+	#successful-applications ul.posts li p {  font-size: 16px;  }
+}
+@media (max-width: 480px) {
+
+}
+
+
+/****************************TEAM PAGE******************************/
+
+.team_footer {
+    font-size: 16px;
+    text-transform: initial;
+	text-align: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: lighter;
+    color: #000;
+    padding: 0px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+
+}
